@@ -30,6 +30,17 @@
 
 .t-head-menu .t-menu__logo:not(:empty) {
   margin-right: var(--td-comp-margin-s);
+  margin-left: 10%;
+}
+.t-head-menu {
+  padding-top: 60px;
+  font-size: 20px;
+}
+.t-menu {
+  font: var(--td-font-body-large);
+}
+.t-menu__logo > * {
+  margin-left: 0;
 }
 
 .card {
@@ -39,7 +50,7 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 200px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .card-image-container {
   position: relative;
@@ -203,6 +214,7 @@
   --td-gray-color-13: #7DA0CA;
   --td-gray-color-10: #5a7ca5;
   --td-gray-color-11: #658ab9;
+  --td-font-body-large: 20px / var(--td-line-height-body-large) var(--td-font-family);
 }
 #root {
   background: #7DA0CA;
