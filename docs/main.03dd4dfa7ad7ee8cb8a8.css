@@ -30,6 +30,9 @@
   margin: 0;
 }
 
+.layout-swiper {
+  padding: 0 15% !important;
+}
 .t-head-menu .t-menu {
   justify-content: space-between;
 }
