@@ -1,0 +1,321 @@
+.article {
+  border-radius: 8px;
+  padding: 10px 10%;
+}
+.article .article-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.article .article-memo {
+  color: var(--td-gray-color-7);
+  text-align: center;
+}
+.article .article-img {
+  margin-bottom: 12px;
+  text-align: center;
+}
+.article .article-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.article .article-desc {
+  text-indent: 2rem;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.article .article-desc p {
+  margin: 0;
+}
+
+._layout .layout-swiper {
+  padding: 0 15% !important;
+}
+._layout .t-head-menu .t-menu {
+  justify-content: space-between;
+}
+._layout .t-head-menu .t-menu__item {
+  flex: 1;
+}
+._layout .t-head-menu .t-menu__logo:not(:empty) {
+  margin-right: var(--td-comp-margin-s);
+}
+._layout .t-head-menu {
+  font-size: 20px;
+  margin-top: -6px;
+}
+._layout .t-menu {
+  font: var(--td-font-body-large);
+}
+._layout .t-menu__logo > * {
+  margin-left: 0;
+}
+._layout .t-head-menu__inner .t-menu:last-child {
+  margin-right: var(--td-comp-margin-xxl);
+}
+
+.card {
+  display: flex;
+  border: 1px solid #719acd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  margin-top: 20px;
+}
+.card:first-child {
+  border-radius: 0 0 8px 8px;
+}
+.card-image-container {
+  position: relative;
+  width: 30%;
+  /* 图片容器宽度 */
+  overflow: hidden;
+  min-width: 30%;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.card-image-container:hover .card-image {
+  transform: scale(1.1);
+  /* 鼠标悬停时图片放大 */
+}
+.card-image-memo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card-image-container:hover .card-image-memo {
+  opacity: 1;
+  /* 鼠标悬停时显示备注 */
+}
+.card-description {
+  width: 70%;
+  /* 文字说明容器宽度 */
+  max-width: 70%;
+  padding: 16px;
+}
+.card-title {
+  white-space: nowrap;
+  /* 强制文本在一行显示 */
+  overflow: hidden;
+  /* 溢出内容隐藏 */
+  text-overflow: ellipsis;
+  /* 溢出内容用省略号表示 */
+  font-weight: bold;
+  /* 标题加粗 */
+  margin-bottom: 8px;
+  /* 与描述内容的间距 */
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.card-title:hover {
+  color: var(--td-brand-color-6);
+}
+.card-btn {
+  color: var(--td-brand-color-6);
+}
+.card-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* 溢出内容隐藏 */
+  text-overflow: ellipsis;
+  /* 溢出内容用省略号表示 */
+  height: 100px;
+}
+
+.home-header {
+  background: var(--td-gray-color-10);
+  color: var(--td-text-color-anti);
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: -20px;
+  border-radius: 8px 8px 0 0;
+  letter-spacing: 20px;
+}
+
+.app-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.food-container {
+  font-family: Arial, sans-serif;
+  padding: 0 20px 0 20px;
+  gap: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.food-container h1 {
+  text-align: center;
+  color: #333;
+}
+.food-container h2 {
+  color: #555;
+  margin-top: 20px;
+}
+.food-container .section {
+  flex: 1;
+}
+.food-container .food-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.food-container h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.food-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.food-container li {
+  color: #666;
+}
+.food-container p {
+  color: #ff6347;
+  font-style: italic;
+}
+
+
+.interview {
+  /* 为容器设置一些外边距和内边距，可根据需要调整 */
+  margin: 20px;
+  /* 设置容器的宽度，这里假设为 80%，可根据实际情况修改 */
+  /* 让容器在其父元素中水平居中 */
+  margin-left: auto;
+  margin-right: auto;
+  /* 设置相对定位，以便视频绝对定位时能基于此容器 */
+  position: relative;
+  /* 隐藏溢出的内容 */
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+.interview video {
+  /* 让视频宽度为容器的 100% */
+  width: 100%;
+  /* 让视频高度自适应，保持原有宽高比 */
+  height: auto;
+  /* 使视频在容器中垂直和水平居中 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 确保视频完全覆盖容器，可能会裁剪部分内容 */
+  object-fit: cover;
+}
+
+.video-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-height: 600px;
+  /* 设置固定高度 */
+  overflow-y: auto;
+  gap: 20px;
+  padding: 20px;
+}
+.video-item {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.video-item video {
+  display: block;
+}
+.video-item p {
+  margin: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dark-background {
+  color: #ffffff;
+  padding: 15px;
+  font-size: 20px;
+  border: 1px dashed;
+}
+.dark-background p {
+  text-indent: 40px;
+}
+
+.donation > div {
+  background-color: var(--td-gray-color-11);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #719acd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* 主题配置 */
+:root {
+  --td-brand-color-light: #1b385c;
+  --td-brand-color: #aac8ee;
+  --td-text-color-primary: #aac8ee;
+  --td-bg-color-container: #021024;
+  --td-gray-color-13: #7DA0CA;
+  --td-gray-color-10: #5a7ca5;
+  --td-gray-color-11: #658ab9;
+  --td-font-body-large: 20px / var(--td-line-height-body-large) var(--td-font-family);
+}
+#root {
+  background: #fff;
+  color: var(--td-brand-color-light);
+}
+.padding-10 {
+  padding: 0 10%;
+}
+.title-h1 {
+  margin: 10px 0;
+  border-left: 6px solid green;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.title-h1:not(:first-of-type) {
+  margin-top: 20px;
+}
+
