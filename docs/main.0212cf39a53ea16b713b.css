@@ -163,44 +163,43 @@
   font-family: Arial, sans-serif;
   padding: 0 20px 0 20px;
   gap: 20px;
-  background-color: #f5f5f5;
+  background-color: var(--td-gray-color-11);
   border-radius: 10px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  color: #fff;
 }
 .food-container h1 {
   text-align: center;
-  color: #333;
 }
 .food-container h2 {
-  color: #555;
   margin-top: 20px;
 }
 .food-container .section {
   flex: 1;
 }
 .food-container .food-card {
-  background-color: #fff;
+  background-color: var(--td-brand-color);
   border-radius: 8px;
   padding: 5px 15px;
   margin-bottom: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.food-container h3 {
-  color: #007bff;
+.food-container .food-card h3 {
+  color: #353333;
   margin-bottom: 10px;
 }
-.food-container ul {
+.food-container .food-card ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 10px;
 }
-.food-container li {
-  color: #666;
+.food-container .food-card li {
+  color: #353333;
 }
-.food-container p {
+.food-container .food-card p {
   color: #ff6347;
   font-style: italic;
 }
